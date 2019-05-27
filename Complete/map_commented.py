@@ -104,7 +104,7 @@ class Game(Widget):
     ball3 = ObjectProperty(None) # getting the sensor 3 object from our kivy file
 
     def serve_car(self): # starting the car when we launch the application
-        self.car.center = self.center # the car will start at the center of the map
+        #self.car.center = self.center # the car will start at the center of the map
         self.car.velocity = Vector(6, 0) # the car will start to go horizontally to the right with a speed of 6
 
     def update(self, dt): # the big update function that updates everything that needs to be updated at each discrete time t when reaching a new state (getting new signals from the sensors)
